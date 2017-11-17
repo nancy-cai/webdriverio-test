@@ -1,0 +1,27 @@
+{
+  "name": "node-test",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "test": "wdio"
+  },
+  "dependencies": {
+    "express": "3.2.6",
+    "jade": "*"
+  },
+  "description": "Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)\r  ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))",
+  "main": "app.js",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "jasmine-spec-reporter": "^4.2.1",
+    "selenium-standalone": "^6.11.0",
+    "wdio-cucumber-framework": "^1.0.2",
+    "wdio-mocha-framework": "^0.5.11",
+    "wdio-spec-reporter": "^0.1.2",
+    "webdriverio": "^4.9.8"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+}
