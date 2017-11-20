@@ -1,3 +1,13 @@
+var baseUrl='http://www.kevinlamping.com';
+//Use SET SERVER=dev if using Window
+if(process.env.SERVER === "dev"){
+    baseUrl='http://wwwdev.kevinlamping.com';
+};
+
+//if Debug comment then use long timeout, if not, use the short timeout
+//SET DEBUG=true
+var timeout=process.env.DEBUG ? 99999999 : 3000;
+
 exports.config = {
     
     //
@@ -58,7 +68,7 @@ exports.config = {
     sync: true,
     //
     // Level of logging verbosity: silent | verbose | command | data | result | error
-    logLevel: 'command',
+    logLevel: 'result',
     //
     // Enables colors for log output.
     coloredLogs: true,
@@ -77,7 +87,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://www.kevinlamping.com',
+    baseUrl: baseUrl,
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -129,7 +139,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout:99999999
+        timeout:timeout
     },
     //
     // =====
