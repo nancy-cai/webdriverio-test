@@ -6,7 +6,7 @@ if(process.env.SERVER === "dev"){
 
 //if Debug comment then use long timeout, if not, use the short timeout
 //SET DEBUG=true
-var timeout=process.env.DEBUG ? 99999999 : 3000;
+var timeout=process.env.DEBUG ? 99999999 : 30000;
 
 exports.config = {
     
@@ -24,7 +24,7 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [
-        // 'path/to/excluded/files'
+        './test/*.page.js'
     ],
     //
     // ============

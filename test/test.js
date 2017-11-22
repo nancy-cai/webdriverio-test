@@ -35,7 +35,7 @@ describe('Webdriver.io page', function(){
 			.click('=API');
 			var title = browser.getTitle();
 			assert.equal(title,'WebdriverIO - API Docs');
-			browser.pause(1000);
+			
 		});
 	})
 	
