@@ -2,6 +2,19 @@ var expect=require('chai').expect;
 //var request = require('sync-request');
 var reviewForm = require('./reviewForm.page.js');
 
+// browser.addCommand('SubmitReview',function(email,review){
+//   if (email){
+//     browser.setValue('#review-email',email);
+//   }
+
+//   if (review) {
+//     browser.setValue('#review-content',review);
+//   }
+
+//   browser.submitForm('#review-content');
+  
+// })
+
 describe('The product review form', function () {
   beforeEach(function() {
     //  Go to the product page
